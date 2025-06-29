@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THEPTCHLAB</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    .fade-in-delay-1 {
+      animation-delay: 0.3s;
+    }
+    .fade-in-delay-2 {
+      animation-delay: 0.6s;
+    }
+    .fade-in-delay-3 {
+      animation-delay: 0.9s;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-black text-white">
+  <!-- Image Slider Header -->
+  <section class="overflow-x-auto whitespace-nowrap relative">
+    <div class="flex w-[300%] animate-scroll overflow-hidden">
+      <img src="https://via.placeholder.com/1200x400?text=Slide+1" class="w-full object-cover inline-block" alt="Slide 1">
+      <img src="https://via.placeholder.com/1200x400?text=Slide+2" class="w-full object-cover inline-block" alt="Slide 2">
+      <img src="https://via.placeholder.com/1200x400?text=Slide+3" class="w-full object-cover inline-block" alt="Slide 3">
+    </div>
+  </section>
+  <style>
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-66.66%); }
+    }
+    .animate-scroll {
+      animation: scroll 12s linear infinite;
+    }
+  </style>
+
+  <!-- Hero Section -->
+  <section class="bg-yellow-400 text-black text-center py-16 px-6 fade-in">
+    <h1 class="text-5xl font-extrabold mb-2">THEPTCHLAB</h1>
+    <p class="text-xl font-medium">Recycle Textile Community - Bandung</p>
+    <p class="mt-4 max-w-2xl mx-auto text-lg">Giving waste a second chance to tell a story ♻️<br>Handmade, thoughtful, sustainable</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 text-center fade-in fade-in-delay-1">
+    <h2 class="text-3xl font-bold mb-6 text-yellow-400">Who We Are</h2>
+    <p class="max-w-2xl mx-auto text-gray-300 text-lg">
+      We are a creative studio based in Bandung, turning textile waste into meaningful, wearable stories. Each product is handmade, with a unique soul and sustainable purpose.
+    </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-16 px-6 bg-gray-900 fade-in fade-in-delay-2">
+    <h2 class="text-3xl font-bold text-center mb-10 text-yellow-400">Explore Our Style</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <img src="https://via.placeholder.com/300x300?text=COMING" alt="Coming" class="rounded-xl border-4 border-yellow-400 hover:scale-105 transform transition duration-300 shadow-xl" />
+      <img src="https://via.placeholder.com/300x300?text=PTCHLAB" alt="Logo" class="rounded-xl border-4 border-yellow-400 hover:scale-105 transform transition duration-300 shadow-xl" />
+      <img src="https://via.placeholder.com/300x300?text=SOON" alt="Soon" class="rounded-xl border-4 border-yellow-400 hover:scale-105 transform transition duration-300 shadow-xl" />
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="text-center py-16 px-6 fade-in fade-in-delay-3">
+    <h2 class="text-3xl font-bold mb-4">Let’s Patch Up the Future!</h2>
+    <p class="text-gray-400 max-w-xl mx-auto mb-6">Join our journey in making sustainable fashion more fun, expressive, and responsible.</p>
+    <a href="https://instagram.com/theptchlab" target="_blank" class="inline-block bg-yellow-400 text-black font-bold px-6 py-3 rounded-full hover:bg-yellow-300 transition">Follow Us on Instagram</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-400 text-black text-center py-6">
+    <p>&copy; 2025 THEPTCHLAB. Made with love and reworked fabric ♻️</p>
+  </footer>
+</body>
+
+</html>
